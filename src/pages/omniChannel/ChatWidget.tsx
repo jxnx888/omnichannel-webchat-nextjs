@@ -521,9 +521,13 @@ export const ChatWidget = () => {
     const checkboxes = preChatSurveyRef?.current?.querySelectorAll<HTMLInputElement>('input[type="checkbox"]');
     checkboxes?.forEach((checkbox) => {
       const checkboxName = checkbox.name;
-      const rightItem = preChatSurvey.body.find((item) => item.id === checkboxName);
+      const rightItem: ChatSurveyBodyProps | undefined = preChatSurvey.body.find(
+        (item) => (item as InputToggleField).id === checkboxName,
+      );
       if (rightItem) {
-        preSurveyData[checkboxName] = checkbox.checked ? rightItem?.valueOn || 'true' : rightItem?.valueOff || 'false';
+        preSurveyData[checkboxName] = checkbox.checked
+          ? (rightItem as InputToggleField).valueOn || 'true'
+          : (rightItem as InputToggleField).valueOff || 'false';
       }
     });
     if (preSurveyData && Object.keys(preSurveyData).length > 0) {
