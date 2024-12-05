@@ -1,0 +1,73 @@
+.chatWidgetIcon {
+    bottom: 20px;
+    position: fixed;
+    right: 20px;
+    z-index: 999;
+
+    .button {
+        height: 50px;
+    }
+}
+.chatWidget {
+    .eachItem {
+        margin: 10px 0;
+    }
+}
+.chatWidgetContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid #000;
+    z-index: 999;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+
+    .chatContainerHeader {
+        display: flex;
+        height: 60px;
+        justify-content: space-between;
+        border-bottom: 1px solid #383838;
+        padding: 15px;
+    }
+
+    .chatContainerBody {
+        flex: 1;
+        overflow-y: auto;
+        padding: 15px;
+
+        .chatConversationContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            .conversationBody {
+                flex: 1;
+                overflow-y: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                .message {
+                    padding: 10px;
+                    background-color: #f1f1f1;
+                    margin-bottom: 5px;
+                    border-radius: 5px;
+                    word-wrap: break-word; /* 强制换行 */
+                    overflow-wrap: break-word; /* 也可以使用此属性来确保长单词换行 */
+                    max-width: 100%; /* 限制宽度为父元素宽度 */
+                }
+            }
+        }
+    }
+
+    .chatContainerFooter {
+        height: 60px;
+        padding: 15px;
+    }
+}
+
+.bolder {
+    font-weight: bold;
+}

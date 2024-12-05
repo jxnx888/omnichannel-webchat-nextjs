@@ -1,0 +1,109 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.1",
+  "body": [
+    {
+      "type": "TextBlock",
+      "weight": "bolder",
+      "text": "Please answer below questions.",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "&#42; First Name",
+      "wrap": true
+    },
+    {
+      "type": "Input.Text",
+      "id": "{\"Id\":\"eb073dc4-5411-ef11-9f8a-002248b20e52\",\"Name\":\"FirstName\",\"IsOption\":false,\"Order\":1,\"IsRequired\":true,\"QuestionText\":\"First Name\"}",
+      "maxLength": 100
+    },
+    {
+      "type": "TextBlock",
+      "text": "&#42; Last Name",
+      "wrap": true
+    },
+    {
+      "type": "Input.Text",
+      "id": "{\"Id\":\"3d078d03-5511-ef11-9f8a-002248b20e52\",\"Name\":\"LastName\",\"IsOption\":false,\"Order\":2,\"IsRequired\":true,\"QuestionText\":\"Last Name\"}",
+      "maxLength": 100
+    },
+    {
+      "type": "TextBlock",
+      "text": "&#42; Email",
+      "wrap": true
+    },
+    {
+      "type": "Input.Text",
+      "id": "{\"Id\":\"ea073dc4-5411-ef11-9f8a-002248b20e52\",\"Name\":\"Email\",\"IsOption\":false,\"Order\":3,\"IsRequired\":true,\"QuestionText\":\"Email\"}",
+      "maxLength": 100
+    },
+    {
+      "type": "TextBlock",
+      "text": "&#42; What's your campus of interest?",
+      "wrap": true
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "{\"Id\":\"3c078d03-5511-ef11-9f8a-002248b20e52\",\"Name\":\"Campus\",\"IsOption\":true,\"Order\":4,\"IsRequired\":true,\"QuestionText\":\"What\\u0027s your campus of interest?\"}",
+      "value": "{\"Id\":\"d226f44f-5e96-ef11-8a69-002248b2e16a\",\"Value\":\" LCI Education (global)\"}",
+      "style": "compact",
+      "isMultiSelect": false,
+      "choices": [
+        {
+          "title": " LCI Education (global)",
+          "value": "{\"Id\":\"d226f44f-5e96-ef11-8a69-002248b2e16a\",\"Value\":\" LCI Education (global)\"}"
+        },
+        {
+          "title": "Collège LaSalle | Casablanca",
+          "value": "{\"Id\":\"e726f44f-5e96-ef11-8a69-002248b2e16a\",\"Value\":\"Coll\\u00E8ge LaSalle | Casablanca\"}"
+        },
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "&#42; Are you an International Student?",
+      "wrap": true
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "{\"Id\":\"56d1add8-5911-ef11-9f8a-002248b20e52\",\"Name\":\"InternationalStudent\",\"IsOption\":true,\"Order\":5,\"IsRequired\":true,\"QuestionText\":\"Are you an International Student?\"}",
+      "value": "{\"Id\":\"5405b2de-5911-ef11-9f8a-002248b20e52\",\"Value\":\"No\"}",
+      "style": "compact",
+      "isMultiSelect": false,
+      "choices": [
+        {
+          "title": "No",
+          "value": "{\"Id\":\"5405b2de-5911-ef11-9f8a-002248b20e52\",\"Value\":\"No\"}"
+        },
+        {
+          "title": "Yes",
+          "value": "{\"Id\":\"5305b2de-5911-ef11-9f8a-002248b20e52\",\"Value\":\"Yes\"}"
+        }
+      ]
+    },
+    {
+      "type": "Input.Toggle",
+      "id": "{\"Id\":\"3b078d03-5511-ef11-9f8a-002248b20e52\",\"Name\":\"Consent\",\"IsOption\":false,\"Order\":6,\"IsRequired\":false,\"QuestionText\":\"I agree to receive electronic messages (information, invitations, offers) from LCI Education and its educational institutions. I reserve the right to withdraw my consent at any time.\"}",
+      "title": "I agree to receive electronic messages (information, invitations, offers) from LCI Education and its educational institutions. I reserve the right to withdraw my consent at any time.",
+      "valueOn": "True",
+      "valueOff": "False",
+      "value": "false"
+    },
+    {
+      "type": "TextBlock",
+      "isSubtle": true,
+      "text": "Fields marked with &#42; are mandatory.",
+      "wrap": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "data": {
+        "type": "InputSubmit"
+      },
+      "title": "Submit"
+    }
+  ]
+}

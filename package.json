@@ -1,0 +1,32 @@
+{
+  "name": "react-next-omnichannel",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.14.3",
+    "@mantine/form": "^7.14.3",
+    "@mantine/hooks": "^7.14.3",
+    "@microsoft/omnichannel-chat-sdk": "^1.10.2-main.13e248d",
+    "adaptivecards": "^3.0.2",
+    "botframework-webchat": "^4.18.0",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
+    "next": "15.0.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3",
+    "typescript": "^5"
+  }
+}
