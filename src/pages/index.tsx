@@ -23,7 +23,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
-      <script src="https://cdn.botframework.com/botframework-webchat/4.9.2/webchat.js" id="external-js"></script>
       <div
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
@@ -114,6 +113,7 @@ export default function Home() {
           </a>
         </footer>
       </div>
+      {/* eslint-disable-next-line @next/next/no-sync-scripts */}
       <script id="Microsoft_Omnichannel_LCWidget"
               src="https://oc-cdn-public.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js"
               data-app-id="a21cdb1a-9fe7-4c57-bbb5-8e9a56374524" data-lcw-version="prod"
