@@ -1,7 +1,6 @@
 'use client';
 //https://github.com/microsoft/omnichannel-chat-sdk/blob/main/README.md
 import { LoadingOverlay, Box, Button, Input, Select, Checkbox } from '@mantine/core';
-import { useForm, UseFormInput } from '@mantine/form';
 import { useDisclosure } from "@mantine/hooks";
 import clsx from "clsx";
 import { getBrowserName, getDeviceName } from './utils/BrowserInfo';
@@ -35,7 +34,7 @@ export type ActionProps = {
   };
   title: string;
 };
-type IDprops={
+/*type IDprops={
   id: string;
   IsRequired: boolean;
   IsOption: boolean;
@@ -43,7 +42,7 @@ type IDprops={
   QuestionText: string;
   Name: string;
   defaultValue: string;
-}
+}*/
 type TextBlockField ={
   type: 'TextBlock';
   text: string;
